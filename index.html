@@ -42,7 +42,7 @@ a{color:var(--fg)}
 .top nav a{font-size:15px;color:var(--fg2);text-decoration:none;transition:color 200ms var(--ease-standard)}
 .top nav a:hover{color:var(--fg)}
 .hero{padding-top:48px;padding-bottom:56px;border-bottom:1px solid var(--line)}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:end}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);align-items:center}
 .wordmark{font-family:"Apfel",sans-serif;font-weight:700;font-size:clamp(48px,5.4vw,64px);letter-spacing:-.02em;line-height:.95;margin:0;direction:ltr;text-align:right}
 .wordmark-sub{font-family:"Apfel",sans-serif;font-weight:400;font-size:18px;letter-spacing:.08em;color:var(--fg2);margin:10px 0 0;direction:ltr;text-align:right}
 h1{font-size:clamp(28px,3.2vw,38px);line-height:1.15;margin:28px 0 0;font-weight:700}
@@ -75,13 +75,14 @@ h1{font-size:clamp(28px,3.2vw,38px);line-height:1.15;margin:28px 0 0;font-weight
 .skills{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px}
 .skills li{position:relative;padding-inline-start:18px}
 .skills li::before{content:"";position:absolute;inset-inline-start:0;top:.62em;width:8px;height:8px;background:var(--green)}
-.amido{margin:0 0 20px;overflow:hidden;aspect-ratio:16/10}
+.skills li:last-child{grid-column:1 / -1}
+.amido{margin:0 0 20px;overflow:hidden;aspect-ratio:16/9}
 .amido img{width:100%;height:100%;object-fit:cover}
 .contact{background:var(--green);color:var(--on-green);padding:64px 0}
 .contact .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-left:48px;padding-right:48px}
 .contact h2{font-size:clamp(32px,4vw,48px);font-weight:700;line-height:1.15;margin:0}
 .contact p{font-size:19px;margin:16px 0 0;max-width:56ch}
-.contact .links{display:flex;flex-direction:column;gap:14px}
+.contact .links{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
 .contact a{color:#fff;font-size:22px;font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;transition:color 200ms var(--ease-standard)}
 .contact a:hover{color:var(--on-green-2)}
 .foot{padding:28px 0 40px}
@@ -207,7 +208,7 @@ h1{font-size:clamp(28px,3.2vw,38px);line-height:1.15;margin:28px 0 0;font-weight
         <div class="block">
           <h3>AMIDO Python. نموذج أولي لتتبع رطوبة النشاء</h3>
           <p class="meta">مشروع شخصي، 2026، قيد التطوير.</p>
-          <p>تطبيق أندرويد يسجّل بيانات جولات التفقد ويربطها بجهازي الطرد المركزي C1 وC2. يجمع بين نماذج فيزيائية وتعلّم تكيفي.</p>
+          <p>تطبيق أندرويد يسجّل بيانات جولات التفقد لجهازي C1 وC2، ويجمع بين نماذج فيزيائية وتعلّم تكيفي.</p>
         </div>
       </section>
       <section aria-label="الاهتمامات">
@@ -231,8 +232,7 @@ h1{font-size:clamp(28px,3.2vw,38px);line-height:1.15;margin:28px 0 0;font-weight
 </main>
 <footer>
   <div class="wrap foot">
-    <p>بن شاعة محمد الأمين. مستغانم، الجزائر.</p>
-    <p>سيرة ذاتية. 2026.</p>
+    <p>بن شاعة محمد الأمين، مستغانم، الجزائر. سيرة ذاتية، 2026.</p>
   </div>
 </footer>
 </body>
